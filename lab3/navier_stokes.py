@@ -2,7 +2,7 @@ from fenics import *
 from mshr import *
 
 T = 5.0            # final time
-num_steps = 5000   # number of time steps
+num_steps = 50000  # number of time steps
 dt = T / num_steps # time step size
 mu = 0.01         # dynamic viscosity
 rho = 1            # density
@@ -129,4 +129,3 @@ for n in range(num_steps):
     p_n.assign(p_)
 
     print("Current time: %f / %f" % (t, T))
-
